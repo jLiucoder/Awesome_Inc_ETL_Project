@@ -1,0 +1,23 @@
+File structure:
+
+* /csv_data contains all the data that we are going to load to the DB
+* /design contains the oracle data modeler files that generates the oracle SQL DDL file to build out the schema
+* mysql_auto_incremented_pk.sql has the latest modified version of the DDL code, converted from oracle, added auto increment PK for necesssary tables.
+    * necessary tables means: Since the location tables and the category & subcategory tables dont have IDs on their own, I modified the tables to have auto increment primriy key to make life easier. Other tables stay the same, since the pk for almost all the other tables are the unique row id from the csv file.  
+* mysql_load.sql has part of the script that loads part of the data to the database.
+
+steps:
+* logical & relational design, done
+* DDL, triggers, done
+* load data, in progress
+    * table loaded: market, region, category, subcategory
+
+Problems that I run into so far:
+
+1. multiple region belongs to one country, eastern US, western US etc. all go to united states,which contridicts our schema design
+
+2. multiple same product ID appears in different market, result in dups, might need to have a one to many relationship from product to market to extract the market as a FK to resolve this issue.
+
+
+
+

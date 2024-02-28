@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="74CD518D-BB15-4BAE-0838-B31105FFD2C4" name="JSH_ADDRESS">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-12 23:11:59 UTC</createdTime>
+<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CITY_ID" id="914FC6E5-31CA-D6D6-4EC1-AFF0491414BB">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 18:48:59 UTC</createdTime>
+<generatorID>E700CEC6-0D11-B62E-7648-793FC943CEEF</generatorID>
+<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<referedAttribute>11D20CB0-FCA6-A4D8-596D-00A6F868E3D1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ADDRESS_ID" id="35D47252-B389-1F3D-3EFB-F0BB1485E2EA">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 18:49:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique address ID]]></commentInRDBMS>
+<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POSTAL_CODE" id="812E83EE-B709-2574-2F7D-D928137EAB68">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 18:49:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[postal code]]></commentInRDBMS>
+<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ROW_ID" id="ECCE093A-81C7-3B1F-27BF-C0179483F832">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 19:22:50 UTC</createdTime>
+<generatorID>D5029395-4B5E-D1EF-33BE-12C40EF8137B</generatorID>
+<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<referedAttribute>D1AFDE03-D721-E745-8C2F-9902E0323E4A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TBL_LAST_DT" id="F14ECCAE-0992-B0AB-0FDE-B60311BCA1D5">
+<createdBy>harshini_d</createdBy>
+<createdTime>2024-02-19 01:27:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
+<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5D39DBEF-AFCC-D3C1-04AC-730866B81D5E" name="POSTAL_CODE PK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 18:49:50 UTC</createdTime>
+<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>35D47252-B389-1F3D-3EFB-F0BB1485E2EA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

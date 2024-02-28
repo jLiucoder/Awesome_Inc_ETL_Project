@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="923D7F54-11AE-4584-7856-A6A05B3BA84C" name="JSH_COUNTRY">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<generatorID>5EB21E72-4B31-C54B-EA1C-45BA8CCDACB0</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY_ID" id="597E7A79-C970-1E9F-3412-FCC77F3D2921">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique country id]]></commentInRDBMS>
+<generatorID>EFF8C340-0A0E-56A5-6AE0-DB1FDB7F5E1A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_NAME" id="5DA9A24F-8905-E7C7-CE76-DC7AE72242E5">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[country name]]></commentInRDBMS>
+<generatorID>90F16F3F-F4E4-9C72-442A-356E5729BCBD</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_LAST_DT" id="11AD1031-64B9-E3EF-D991-0C522D66CB72">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
+<generatorID>1AE8DB58-6CC9-8674-A3EE-D1E275552F15</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_ID" id="4591FA14-1824-690D-B5AC-CB5943D0CE0F">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<generatorID>0E2173C5-0F83-1CA9-5E50-B5B207F90E02</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E765EF8-CB75-2D40-F22E-BE03BBCE77AA" referredColumn="62047218-B592-66FE-5899-F5637E98A04A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8440576F-3525-45EB-7D7D-859293CD07FE" name="JSH_COUNTRY_PK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<generatorID>363DEE1A-476C-6861-1AD9-206C7294B816</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="597E7A79-C970-1E9F-3412-FCC77F3D2921"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90B7A3BF-F705-7949-DCE5-C5E2B1A73ACE" name="JSH_COUNTRY_JSH_REGION_FK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<generatorID>9B2A6585-6C04-BD7F-647B-52C58BD1460A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4591FA14-1824-690D-B5AC-CB5943D0CE0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

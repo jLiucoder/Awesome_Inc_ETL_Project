@@ -1,0 +1,211 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07074BFE-A825-20EF-895D-0ED9AE57D724" name="JSH_ORDER_PRODUCT">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<generatorID>829605DB-BA9A-1F9F-1041-A4F58372EEE0</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ROW_ID" id="8F5A388F-BC02-7386-9718-B86D06410599">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<generatorID>59ED1796-5B36-F02F-2E28-39265085992A</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B711B5CA-B071-4886-B02D-F6ED820E86E5" referredColumn="10ED52D2-F53F-A9F8-41F3-AA719DE48661"/>
+<colAssociation fkAssociation="861A2B99-CA44-440F-7CD5-31978CE7D5ED" referredColumn="E10CEFED-2252-B826-7D57-49172D413406"/>
+</associations>
+</Column>
+<Column name="PRODUCT_ID" id="58E1EF5E-D570-B745-8DC5-F0EB483700DC">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<generatorID>BD7A3DDE-40C9-7DB7-C2C6-F6EBA6C736C3</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49342FE1-3075-A83F-B652-39E860443AC2" referredColumn="E79DADC0-4AB8-1267-C8D3-24B24817450D"/>
+</associations>
+</Column>
+<Column name="ORDER_PRIORITY" id="23A7BCC7-F04C-B67B-1901-C5CB0F3046AE">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[order priority ]]></commentInRDBMS>
+<generatorID>05119D5E-1BB4-0362-7814-B749886CE4F2</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALES" id="7835E808-8B3A-AA9B-E3CD-6FE5FF463EFC">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[sales amount]]></commentInRDBMS>
+<generatorID>C0F92DED-D9B4-E88A-25D7-F8FD864CE6C3</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROFIT" id="C07F9915-2FA7-BD04-9ADE-B3313B4C26D3">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[profit amount]]></commentInRDBMS>
+<generatorID>3E7F0A91-0943-4573-2B92-1F2964D05615</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTITY" id="15197761-E160-3584-C4D6-310B8946CC0D">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[quantity of the item]]></commentInRDBMS>
+<generatorID>812C28E2-9CDF-1D52-C9B5-F78D54093F7D</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISCOUNT" id="8302D974-8591-248A-D921-67F8CB875B78">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Discount in decimal format (0.xx)]]></commentInRDBMS>
+<generatorID>AD509444-FB42-8310-AB4D-DEA8751881DF</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIPPING_COST" id="FF0EB29B-FD2E-9B38-C672-EFC3BF0A5F38">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[shipping cost in decimal format (xxx.xxx)]]></commentInRDBMS>
+<generatorID>9074E1DB-F7D2-90D5-D128-B3855ED3E2B9</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,7,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP_MODE" id="794B3B34-6A3C-29F1-ADF0-61CD5ED59408">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[ship mode: first class, second class, same day, standard class.]]></commentInRDBMS>
+<generatorID>72F77A45-1A1B-2B44-E1A2-0C5833B50F92</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP_DATE" id="52E2FACF-B048-D139-BA47-CD2F9E0EEE09">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[ship date in date format]]></commentInRDBMS>
+<generatorID>4530E1A6-20E3-C209-91AB-F90266B72834</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_LAST_DT" id="EEBA9698-DB22-4EAC-E4C3-9E02D4CE7AB4">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
+<generatorID>3EDEEC67-FC96-7E34-D713-9919227D72A7</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F42B5ED-1CE3-795B-F8C8-F7FF7DB7D3A5" name="JSH_ORDER_PRODUCT_PK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<generatorID>EEE0495C-60EF-0A28-27C3-E632052EF6D5</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58E1EF5E-D570-B745-8DC5-F0EB483700DC"/>
+<colUsage columnID="8F5A388F-BC02-7386-9718-B86D06410599"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B8910FA-D6EA-398C-2C64-AA033BB432D3" name="JSH_ORDER_PRODUCT_JSH_CUSTOMER_FK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<generatorID>11B47F4D-164A-5F5B-61AB-AFB5ADD113CF</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F5A388F-BC02-7386-9718-B86D06410599"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A90BE16-7C5C-DFAF-3DC3-55560029F3E6" name="JSH_ORDER_PRODUCT_JSH_ORDER_FK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<generatorID>707F62EA-BC4D-E7B0-93C1-83DAD71E3596</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F5A388F-BC02-7386-9718-B86D06410599"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D773536F-02B1-0C25-B321-CEC566C2B739" name="JSH_ORDER_PRODUCT_JSH_PRODUCT_FK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<generatorID>134A3104-F814-73F7-22F3-579FD6A54203</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58E1EF5E-D570-B745-8DC5-F0EB483700DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
