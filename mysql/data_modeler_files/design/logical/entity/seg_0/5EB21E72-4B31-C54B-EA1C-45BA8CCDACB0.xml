@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5EB21E72-4B31-C54B-EA1C-45BA8CCDACB0" name="JSH_COUNTRY">
 <createdBy>jiayuliu</createdBy>
 <createdTime>2024-02-12 23:10:59 UTC</createdTime>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
 </engineerTo>
@@ -19,7 +19,7 @@
 <createdBy>jiayuliu</createdBy>
 <createdTime>2024-02-13 18:47:39 UTC</createdTime>
 <commentInRDBMS><![CDATA[unique country id]]></commentInRDBMS>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
 </engineerTo>
@@ -33,7 +33,7 @@
 <createdBy>jiayuliu</createdBy>
 <createdTime>2024-02-13 18:48:09 UTC</createdTime>
 <commentInRDBMS><![CDATA[country name]]></commentInRDBMS>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
 </engineerTo>
@@ -47,7 +47,7 @@
 <createdBy>harshini_d</createdBy>
 <createdTime>2024-02-19 01:26:24 UTC</createdTime>
 <commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
 </engineerTo>
@@ -56,27 +56,12 @@
 <logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="REGION_ID" id="0E2173C5-0F83-1CA9-5E50-B5B207F90E02">
-<createdBy>harshini_d</createdBy>
-<createdTime>2024-02-19 01:40:25 UTC</createdTime>
-<generatorID>9B2A6585-6C04-BD7F-647B-52C58BD1460A</generatorID>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
-<engineerTo>
-<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
-</engineerTo>
-<referedAttribute>7F29B231-7739-B299-B4B5-3BEAFFA1643F</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>2</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="363DEE1A-476C-6861-1AD9-206C7294B816" name="COUNTRY PK">
 <createdBy>jiayuliu</createdBy>
 <createdTime>2024-02-13 18:47:56 UTC</createdTime>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<ownerDesignName>design</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="false"/>

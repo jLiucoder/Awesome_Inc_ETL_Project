@@ -2,7 +2,7 @@
 <Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D33CB031-86A6-0B97-69BC-182161D58B29" name="JSH_PRODUCT">
 <createdBy>jiayuliu</createdBy>
 <createdTime>2024-02-13 19:28:36 UTC</createdTime>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
 </engineerTo>
@@ -19,7 +19,7 @@
 <createdBy>jiayuliu</createdBy>
 <createdTime>2024-02-13 19:28:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[unique product id]]></commentInRDBMS>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
 </engineerTo>
@@ -33,7 +33,7 @@
 <createdBy>jiayuliu</createdBy>
 <createdTime>2024-02-13 19:29:47 UTC</createdTime>
 <commentInRDBMS><![CDATA[product name]]></commentInRDBMS>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
 </engineerTo>
@@ -47,7 +47,7 @@
 <createdBy>jiayuliu</createdBy>
 <createdTime>2024-02-13 19:30:19 UTC</createdTime>
 <generatorID>082E412C-D628-9FE0-3178-CE5EAFE75952</generatorID>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
 </engineerTo>
@@ -58,25 +58,11 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="MARKET" id="92B9D6A8-F505-40E1-35AF-6E89FA362FB5">
-<createdBy>harshini_d</createdBy>
-<createdTime>2024-02-19 01:47:12 UTC</createdTime>
-<commentInRDBMS><![CDATA[Specifies which Market it belongs to]]></commentInRDBMS>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
-<engineerTo>
-<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="TBL_LAST_DT" id="F8347713-1620-1C83-546E-9924A4F04C60">
 <createdBy>harshini_d</createdBy>
 <createdTime>2024-02-19 01:31:13 UTC</createdTime>
 <commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
 </engineerTo>
@@ -90,7 +76,7 @@
 <identifier id="8017ADDC-6ACC-A534-3D55-C765B1126935" name="PRODUCT PK">
 <createdBy>jiayuliu</createdBy>
 <createdTime>2024-02-13 19:29:08 UTC</createdTime>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<ownerDesignName>design</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
 <item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="false"/>

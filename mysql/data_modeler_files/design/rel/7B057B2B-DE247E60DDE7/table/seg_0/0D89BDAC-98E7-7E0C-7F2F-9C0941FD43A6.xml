@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D6D5C07-A3DA-DB05-2462-A932CB483AC6" name="JSH_ORDER">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D89BDAC-98E7-7E0C-7F2F-9C0941FD43A6" name="JSH_ORDER">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <generatorID>4B1FDDE3-4CB3-B7AA-DB24-BC241D4C08F0</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ROW_ID" id="10ED52D2-F53F-A9F8-41F3-AA719DE48661">
+<Column name="ROW_ID" id="AE015826-F25F-159C-7CDE-9921B2BABD65">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <commentInRDBMS><![CDATA[row id as the pk for orders, since order id is not unique]]></commentInRDBMS>
 <generatorID>D9FDC1BA-1F31-919E-6DD9-D784B768D98D</generatorID>
 <ownerDesignName>design</ownerDesignName>
@@ -21,9 +21,9 @@
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ORDER_ID" id="DC9FF0B5-94CC-F625-74CB-BF6AA5DD88E4">
+<Column name="ORDER_ID" id="F38B63A7-94F0-FF42-AD09-4E89FCD731C1">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <commentInRDBMS><![CDATA[order id for orders]]></commentInRDBMS>
 <generatorID>105CC7A1-092A-D37C-242B-C8D22C58D354</generatorID>
 <ownerDesignName>design</ownerDesignName>
@@ -34,9 +34,9 @@
 <ownDataTypeParameters>,40,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ORDER_DATE" id="31BBA189-317E-F5CE-4A78-1C0425A7A308">
+<Column name="ORDER_DATE" id="297FFC5E-520A-8BA9-ED7C-E10BFF90DB92">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <commentInRDBMS><![CDATA[The date the order was placed]]></commentInRDBMS>
 <generatorID>BD101787-AA46-576C-0088-C24AD6645D24</generatorID>
 <ownerDesignName>design</ownerDesignName>
@@ -46,9 +46,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="IS_RETURNED" id="06E9A2C0-C2AB-438C-4698-15207CDEEF72">
+<Column name="IS_RETURNED" id="B34CFE83-CF70-2BC8-1D3D-5C259D60DA11">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <commentInRDBMS><![CDATA[If the order was returned or not]]></commentInRDBMS>
 <generatorID>7457A267-055A-C2D8-2F4A-63D3826A2BA3</generatorID>
 <ownerDesignName>design</ownerDesignName>
@@ -59,9 +59,9 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TBL_LAST_DT" id="A67E044B-93FD-5512-2C2D-96F6BBA26EB3">
+<Column name="TBL_LAST_DT" id="4481E64A-E626-26FA-5872-4CA3AA457135">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
 <generatorID>1A1FBBFE-4B81-94D4-CECF-61BBCE12565F</generatorID>
 <ownerDesignName>design</ownerDesignName>
@@ -73,16 +73,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D6045DCD-CBAD-B9AC-45CD-9AD20B4D87A3" name="JSH_ORDER_PK">
+<ind_PK_UK id="EB803A92-2135-C20D-6339-18BDEFC112EB" name="JSH_ORDER_PK">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <generatorID>D2787FF3-32C3-2124-5B5E-B80D14E104E5</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="10ED52D2-F53F-A9F8-41F3-AA719DE48661"/>
+<colUsage columnID="AE015826-F25F-159C-7CDE-9921B2BABD65"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

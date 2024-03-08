@@ -1,29 +1,29 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6821272E-EAE6-C7E3-C5F3-999F71841E90" name="JSH_MARKET">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EFE26AEA-B0F3-6DEF-77B5-FAEE1552B92E" name="JSH_MARKET">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <generatorID>63C19BB9-8329-E904-253C-9029F4E89348</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="MARKET_ID" id="92DE4B20-9A6A-4902-4E7A-52C18ED4B70B">
+<Column name="MARKET_ID" id="DC916B97-5196-A3EC-B43E-834254C5C974">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <commentInRDBMS><![CDATA[unique market identifier]]></commentInRDBMS>
 <generatorID>19E066DC-0C50-516F-8994-26F9B60975AB</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="MARKET_NAME" id="5AD0ADD4-62E7-780D-3DE6-A82FCC36AAE1">
+<Column name="MARKET_NAME" id="AAFDE1D0-0199-9177-3B90-CE4BB901092B">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <commentInRDBMS><![CDATA[market name]]></commentInRDBMS>
 <generatorID>66C87808-D411-797D-9CA8-F96B2A1404A8</generatorID>
 <ownerDesignName>design</ownerDesignName>
@@ -34,9 +34,9 @@
 <ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TBL_LAST_DT" id="C7C7F00E-FB19-2909-2D0A-4EAB64EACC80">
+<Column name="TBL_LAST_DT" id="D0434C08-F4E0-73BD-8426-D181212BA010">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
 <generatorID>4174FE53-AA44-10FA-F3EA-60232AAB6B24</generatorID>
 <ownerDesignName>design</ownerDesignName>
@@ -48,16 +48,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="31AC4E99-CB1D-3FE6-2D0A-1A789AAADABD" name="JSH_MARKET_PK">
+<ind_PK_UK id="43523C44-3033-4323-144B-EFE55A5CBC09" name="JSH_MARKET_PK">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <generatorID>3E374CA4-B604-DD3F-E980-6839CB662B62</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="92DE4B20-9A6A-4902-4E7A-52C18ED4B70B"/>
+<colUsage columnID="DC916B97-5196-A3EC-B43E-834254C5C974"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

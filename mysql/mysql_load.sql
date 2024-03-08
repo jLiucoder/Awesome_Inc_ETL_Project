@@ -44,7 +44,7 @@ join jsh_category c on c.category_name = o.Category
 -- select * from jsh_sub_category
 
 -- TODO: this part needs to be discussed and fixed
--- Insert into jsh_product (product_id, product_name, sub_category_id, market)
+Insert into jsh_product (product_id, product_name, sub_category_id, market)
 select distinct  o.`Product ID`, o.`Product Name`
 from orders_data o
 join jsh_sub_category c on c.sub_category_name = o.`Sub-Category`

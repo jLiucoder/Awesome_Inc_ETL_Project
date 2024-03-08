@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8AA3D19-0C3A-2A54-6012-1012213F7018" name="JSH_PRODUCT">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F4C9CB9-1FE4-FAF4-F37B-07315F8951BC" name="JSH_PRODUCT">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <generatorID>D33CB031-86A6-0B97-69BC-182161D58B29</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="PRODUCT_ID" id="E79DADC0-4AB8-1267-C8D3-24B24817450D">
+<Column name="PRODUCT_ID" id="D26F0F46-0891-F1F2-0974-7EF66C23AD9B">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <commentInRDBMS><![CDATA[unique product id]]></commentInRDBMS>
 <generatorID>86373A7B-B426-4324-48EF-802FA0F035A8</generatorID>
 <ownerDesignName>design</ownerDesignName>
@@ -21,9 +21,9 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="PRODUCT_NAME" id="49F136AA-7C03-0D7F-1BD5-3EB91DED3E44">
+<Column name="PRODUCT_NAME" id="6F1604D7-0883-7EF9-DFC4-9051736C9353">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <commentInRDBMS><![CDATA[product name]]></commentInRDBMS>
 <generatorID>32C8509F-F8A2-30C2-2E6C-FBFAAB4B3DBA</generatorID>
 <ownerDesignName>design</ownerDesignName>
@@ -34,38 +34,25 @@
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="SUB_CATEGORY_ID" id="5D6D4E1A-EC5A-26DE-16DE-217971D064A1">
+<Column name="SUB_CATEGORY_ID" id="567B2061-AA6E-A188-83E8-1793B6C714AE">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <generatorID>D8533601-875A-AB47-35C0-38E3A1757836</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
+<dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="75E909A8-8A2E-8150-391A-FCF52D8DD94B" referredColumn="CAB13DE8-21CA-70A7-EB43-C0EBF16A5618"/>
+<colAssociation fkAssociation="0F54E474-0A68-698E-781F-FB093B9A3DAB" referredColumn="2EE7A40F-6D0E-4886-A674-AAC8D79402F2"/>
 </associations>
 </Column>
-<Column name="MARKET" id="82E449D6-0A15-6E47-9763-1014360DB081">
+<Column name="TBL_LAST_DT" id="AABA49EF-D4B5-3C56-FDD6-613A7F666350">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
-<commentInRDBMS><![CDATA[Specifies which Market it belongs to]]></commentInRDBMS>
-<generatorID>92B9D6A8-F505-40E1-35AF-6E89FA362FB5</generatorID>
-<ownerDesignName>design</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>20</dataTypeSize>
-<ownDataTypeParameters>20,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TBL_LAST_DT" id="956FB15B-A3E2-F685-AC6C-22725B386641">
-<createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
 <generatorID>F8347713-1620-1C83-546E-9924A4F04C60</generatorID>
 <ownerDesignName>design</ownerDesignName>
@@ -77,27 +64,27 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="BA643010-98E6-9F98-C606-A14696B0E521" name="JSH_PRODUCT_PK">
+<ind_PK_UK id="E97AA5DC-28B8-D14D-413A-07FED5C7D5D5" name="JSH_PRODUCT_PK">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <generatorID>8017ADDC-6ACC-A534-3D55-C765B1126935</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="E79DADC0-4AB8-1267-C8D3-24B24817450D"/>
+<colUsage columnID="D26F0F46-0891-F1F2-0974-7EF66C23AD9B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="486D0FA2-A000-A3D2-25A2-8DDB209B2FA1" name="JSH_PRODUCT_JSH_SUB_CATEGORY_FK">
+<ind_PK_UK id="EEF854DF-995E-0AB1-47D2-2457582194A1" name="JSH_PRODUCT_JSH_SUB_CATEGORY_FK">
 <createdBy>jiayuliu</createdBy>
-<createdTime>2024-02-26 20:13:44 UTC</createdTime>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
 <generatorID>082E412C-D628-9FE0-3178-CE5EAFE75952</generatorID>
 <ownerDesignName>design</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="5D6D4E1A-EC5A-26DE-16DE-217971D064A1"/>
+<colUsage columnID="567B2061-AA6E-A188-83E8-1793B6C714AE"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

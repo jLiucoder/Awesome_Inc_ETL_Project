@@ -1,8 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_REGION_COUNTRY" directorySegmentName="seg_0" id="9B2A6585-6C04-BD7F-647B-52C58BD1460A">
-<createdBy>harshini_d</createdBy>
-<createdTime>2024-02-19 01:40:25 UTC</createdTime>
-<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_19" directorySegmentName="seg_0" id="AC7370A6-1DBF-1045-CD6C-B5BB2713033B">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:33:30 UTC</createdTime>
+<ownerDesignName>design</ownerDesignName>
 <engineerTo>
 <item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
 </engineerTo>
@@ -13,7 +13,7 @@
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>7383C55A-6D99-61E3-03D5-3C81CDB832DC</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>5EB21E72-4B31-C54B-EA1C-45BA8CCDACB0</targetEntity>
+<targetEntity>AA86D3BF-AEFB-FCB5-D570-57494A3E3091</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>
