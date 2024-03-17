@@ -1,5 +1,5 @@
--- table seperation and population code
--- author: jerry liu
+-- table separation and population code
+-- author: Jerry Liu
 
 -- check data
 select * from orders_data;
@@ -16,20 +16,49 @@ SELECT DISTINCT  m.market_id,o.Region
 FROM orders_data o
 JOIN jsh_market m ON o.market = m.market_name;
 
--- test if loaded
--- select * from jsh_region
+-- country populating
+Insert into jsh_country (country_name)
+select distinct Country from jhs_hr_data;
+
+-- populating region_country
+Insert into jsh_region_country (region_id, country_id)
+SELECT DISTINCT
+    jr.region_id,
+    jc.country_id
+FROM
+    jhs_hr_data jd
+JOIN
+    jsh_region jr
+    ON jd.Region = jr.region_name
+JOIN
+    jsh_country jc
+    ON jd.Country = jc.country_name;
 
 
--- TODO：why there are several U.S. regions and the country is all United States, and country table have dups for united states
--- TODO: skip to discuss
+-- populating state table
+insert into jsh_state (state_name, country_id)
+select distinct jd.State, jc.country_id from jsh_country jc
+join jhs_hr_data jd on jc.country_name = jd.Country;
 
--- insert into jsh_country (country_name, region_id)
--- select distinct  o.country,c.region_id
--- from orders_data o
--- join jsh_region c on o.Region = c.region_name;
+-- populating city table # this is correct
+INSERT INTO jsh_city (city_name, state_id)
+SELECT DISTINCT jd.City, js.state_id
+FROM jhs_hr_data jd
+JOIN jsh_state js ON js.state_name = jd.State;
 
--- test if loaded
--- select * from jsh_country
+-- populating the address table
+insert into jsh_address (row_id, postal_code, city_id)
+select distinct
+    jcu.row_id,
+    jd.`Postal Code`,
+    jc.city_id
+from jhs_hr_data jd
+join
+    jsh_city jc
+    on jd.City = jc.city_name
+join
+    jsh_customer jcu
+    on jd.`Row ID` = jcu.row_id;
 
 Insert into jsh_category (category_name)
 select distinct category from orders_data;
