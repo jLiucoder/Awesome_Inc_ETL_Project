@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="74CD518D-BB15-4BAE-0838-B31105FFD2C4" name="DIM_JSH_ADDRESS">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-12 23:11:59 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ADDRESS_ID" id="35D47252-B389-1F3D-3EFB-F0BB1485E2EA">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 18:49:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique address ID]]></commentInRDBMS>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POSTAL_CODE" id="812E83EE-B709-2574-2F7D-D928137EAB68">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 18:49:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[postal code]]></commentInRDBMS>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TBL_LAST_DT" id="F14ECCAE-0992-B0AB-0FDE-B60311BCA1D5">
+<createdBy>harshini_d</createdBy>
+<createdTime>2024-02-19 01:27:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5D39DBEF-AFCC-D3C1-04AC-730866B81D5E" name="POSTAL_CODE PK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 18:49:50 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>35D47252-B389-1F3D-3EFB-F0BB1485E2EA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

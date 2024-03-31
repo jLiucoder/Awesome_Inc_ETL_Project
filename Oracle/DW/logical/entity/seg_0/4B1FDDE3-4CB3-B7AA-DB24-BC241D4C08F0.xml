@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4B1FDDE3-4CB3-B7AA-DB24-BC241D4C08F0" name="DIM_JSH_ORDER">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 18:57:28 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ROW_ID" id="D9FDC1BA-1F31-919E-6DD9-D784B768D98D">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 18:57:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[row id as the pk for orders, since order id is not unique]]></commentInRDBMS>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER_ID" id="105CC7A1-092A-D37C-242B-C8D22C58D354">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 18:58:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[order id for orders]]></commentInRDBMS>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>40</dataTypePrecision>
+<ownDataTypeParameters>,40,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER_DATE" id="BD101787-AA46-576C-0088-C24AD6645D24">
+<createdBy>harshini_d</createdBy>
+<createdTime>2024-02-19 01:48:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date the order was placed]]></commentInRDBMS>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IS_RETURNED" id="7457A267-055A-C2D8-2F4A-63D3826A2BA3">
+<createdBy>harshini_d</createdBy>
+<createdTime>2024-02-19 01:49:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[If the order was returned or not]]></commentInRDBMS>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TBL_LAST_DT" id="1A1FBBFE-4B81-94D4-CECF-61BBCE12565F">
+<createdBy>harshini_d</createdBy>
+<createdTime>2024-02-19 01:32:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D2787FF3-32C3-2124-5B5E-B80D14E104E5" name="ORDER PK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 18:58:09 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D9FDC1BA-1F31-919E-6DD9-D784B768D98D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

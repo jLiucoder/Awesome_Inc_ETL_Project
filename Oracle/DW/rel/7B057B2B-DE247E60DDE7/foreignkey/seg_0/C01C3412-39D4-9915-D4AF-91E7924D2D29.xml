@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C01C3412-39D4-9915-D4AF-91E7924D2D29" containerWithKeyObject="5F8B0540-97AA-924B-DB9F-838DA2C6CB4F" localFKIndex="19F96BC9-3B36-FCFA-32BF-206978F3F9C5" name="FACT_JSH_ORDER_PRODUCT_DIM_JSH_STATE_FK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:14:51 UTC</createdTime>
+<generatorID>C85B00F2-7093-B4DE-569F-F192A9B76211</generatorID>
+<ownerDesignName>DW</ownerDesignName>
+<referredTableLongName>DIM_JSH_STATE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9C1E84FC-57CD-161D-C4B7-4D466D898899</referredTableID>
+<keyObject>D0F6CD30-3CCD-30F8-2ABD-EEC6009EA093</keyObject>
+<referredKeyID>D0F6CD30-3CCD-30F8-2ABD-EEC6009EA093</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>STATE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
