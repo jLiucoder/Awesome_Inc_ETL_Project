@@ -22,6 +22,7 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="729B5F7D-BD34-C0BE-6B4F-AB6436ACDA5E" referredColumn="DF8AD6F6-33DA-8207-0D4B-47E5ACC2D93F"/>
+<colAssociation fkAssociation="9A86C9BA-ED10-DDDA-57B2-D6DC1453D9EA" referredColumn="A00F0FEB-CB66-9E20-A307-F8DFE513A1A4"/>
 </associations>
 </Column>
 <Column name="PRODUCT_ID" id="A8F89B71-F515-19F0-3BAA-EF88021CB504">
@@ -145,22 +146,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="ROW_ID_1" id="8449A866-43A5-C354-B94E-A798E0CD844D">
-<createdBy>jiayuliu</createdBy>
-<createdTime>2024-03-31 23:14:51 UTC</createdTime>
-<generatorID>8FCC9668-138B-D353-ACDB-8CCE65F822F9</generatorID>
-<ownerDesignName>DW</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="9A86C9BA-ED10-DDDA-57B2-D6DC1453D9EA" referredColumn="A00F0FEB-CB66-9E20-A307-F8DFE513A1A4"/>
-</associations>
 </Column>
 <Column name="TBL_LAST_DT" id="914E1531-3FCA-F302-2A76-5B7D210BDBBA">
 <createdBy>jiayuliu</createdBy>
@@ -331,7 +316,6 @@
 <indexColumnUsage>
 <colUsage columnID="A8F89B71-F515-19F0-3BAA-EF88021CB504"/>
 <colUsage columnID="67124CDA-05D7-D88B-CFD0-0F4D929F57ED"/>
-<colUsage columnID="8449A866-43A5-C354-B94E-A798E0CD844D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="2E2ED950-5E8E-4369-5DB9-A26EB07B20EC" name="FACT_JSH_ORDER_PRODUCT_DIM_JSH_ADDRESS_FK">
@@ -386,7 +370,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="8449A866-43A5-C354-B94E-A798E0CD844D"/>
+<colUsage columnID="67124CDA-05D7-D88B-CFD0-0F4D929F57ED"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="2E9987E9-8B24-5B06-5CE0-33D1E7D3F4A5" name="FACT_JSH_ORDER_PRODUCT_DIM_DATE_FK">
