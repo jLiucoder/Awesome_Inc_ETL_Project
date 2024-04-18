@@ -1,18 +1,32 @@
-CREATE TABLE dim_date (
-    date_id           VARCHAR2(8) NOT NULL,
-    full_date         DATE,
-    days              VARCHAR2(2),
-    month_short       VARCHAR2(3),
-    month_num         VARCHAR2(3),
-    monty_long        VARCHAR2(9),
-    day_of_week_short VARCHAR2(1),
-    day_of_week_long  VARCHAR2(9),
-    year              VARCHAR2(4),
-    quarter           CHAR(2),
-    entry_id          NUMBER(10)
-);
+CREATE TABLE DIM_DATE AS
+SELECT
+ n AS ENTRY_ID,
+ TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day') AS Full_Date,
+ TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'DD') AS Days,
+ TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'Mon') AS Month_Short,
+ TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'MM') AS Month_Num,
+ TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'Month') AS Month_Long,
+ TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'D') AS Day_Of_Week_Short,
+ TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'Day') AS Day_Of_Week_Long,
+ TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'YYYY') AS Year,
+ CASE
+ WHEN TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'MM') IN (1,2,3) THEN 'Q1'
+ WHEN TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'MM') IN (4,5,6) THEN 'Q2'
+ WHEN TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'MM') IN (7,8,9) THEN 'Q3'
+ ELSE
+ 'Q4'
+ END Quarter,
+ TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'MM')||
+ TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'DD')||
+ TO_CHAR(TO_DATE('31/12/1999','DD/MM/YYYY') + NUMTODSINTERVAL(n,'day'),'YYYY')
+ AS DATE_ID
+FROM (
+ select level n
+ from dual
+ connect by level <= 36600
+); 
+ALTER TABLE DIM_DATE ADD CONSTRAINT PK_DIM_DATE PRIMARY KEY (DATE_ID);
 
-ALTER TABLE dim_date ADD CONSTRAINT dim_date_pk PRIMARY KEY ( date_id );
 
 CREATE TABLE dim_jsh_address (
     address_id  NUMBER(2) NOT NULL,
@@ -232,6 +246,7 @@ COMMENT ON COLUMN dim_jsh_sub_category.tbl_last_dt IS
 
 ALTER TABLE dim_jsh_sub_category ADD CONSTRAINT dim_jsh_sub_category_pk PRIMARY KEY ( sub_category_id );
 
+
 CREATE TABLE fact_jsh_order_product (
     row_id          NUMBER(10) NOT NULL,
     product_id      VARCHAR2(20) NOT NULL,
@@ -286,7 +301,8 @@ COMMENT ON COLUMN fact_jsh_order_product.tbl_last_dt IS
 ALTER TABLE fact_jsh_order_product ADD CONSTRAINT fact_jsh_order_product_pk PRIMARY KEY ( product_id,
                                                                                           row_id );
 
- ERROR: FK name length exceeds maximum allowed length(30) 
+
+ --ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE fact_jsh_order_product
     ADD CONSTRAINT fact_order_product_dim_date_fk FOREIGN KEY ( date_id )
         REFERENCES dim_date ( date_id );
@@ -345,4 +361,3 @@ ALTER TABLE fact_jsh_order_product
 ALTER TABLE fact_jsh_order_product
     ADD CONSTRAINT fact_order_product_dim_sub_category_fk FOREIGN KEY ( sub_category_id )
         REFERENCES dim_jsh_sub_category ( sub_category_id );
-
