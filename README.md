@@ -1,4 +1,4 @@
-# Spring 2024 ETL advanced project.
+# Spring 2024 ETL advanced project
 This monorepo contains all the necessary code for the project.
  
 ## Intro
