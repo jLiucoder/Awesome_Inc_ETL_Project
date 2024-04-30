@@ -1,6 +1,6 @@
 # Spring 2024 ETL advanced project.
 This monorepo contains all the necessary code for the project.
-
+ 
 ## Intro
 
 For the ETL project, the approach that we took is using AWS-related tools, such as AWS RDS for our OLTP database, and AWS Redshift for data warehouse. And for the actual process, we used AWS glue to extract, transform and load to the data warehouse, and accomplished the full data load and incremental data load.
