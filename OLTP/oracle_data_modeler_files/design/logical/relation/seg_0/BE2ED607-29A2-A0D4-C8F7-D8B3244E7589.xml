@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_CATEGORY_SUBCATEGORY" directorySegmentName="seg_0" id="BE2ED607-29A2-A0D4-C8F7-D8B3244E7589">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-02-13 19:28:06 UTC</createdTime>
+<ownerDesignName>jhs_oltp_1</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<sourcePk>C1C5A402-AAE0-B24D-CEE4-D97921A484C1</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AA03C0AE-C2BC-A496-1C27-B2A652970479</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AFF21843-EB47-D496-FD2E-A717514973DA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

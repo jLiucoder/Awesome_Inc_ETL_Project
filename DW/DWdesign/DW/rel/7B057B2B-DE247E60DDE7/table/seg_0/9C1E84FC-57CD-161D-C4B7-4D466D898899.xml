@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C1E84FC-57CD-161D-C4B7-4D466D898899" name="DIM_JSH_STATE">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:14:51 UTC</createdTime>
+<generatorID>F843863E-E440-6EA6-5CFB-6686145BCEEC</generatorID>
+<ownerDesignName>DW</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STATE_ID" id="DE5932FC-B4AB-40DB-4BF8-8EAF19FC61B6">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:14:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique state identifier]]></commentInRDBMS>
+<generatorID>60060072-65B9-7DF6-54E4-1DA23F6A0B60</generatorID>
+<ownerDesignName>DW</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATE_NAME" id="0D5DEC26-482E-35D9-DDA6-5612819284E3">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:14:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[state name]]></commentInRDBMS>
+<generatorID>5EDE3893-CA61-4CD1-2C64-A1ECF3D9958E</generatorID>
+<ownerDesignName>DW</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL_LAST_DT" id="13F7F2F2-40AE-0B7D-FFDB-4755A3F3D4A9">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:14:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
+<generatorID>AAD71096-451B-BD79-669F-B77EE7773E84</generatorID>
+<ownerDesignName>DW</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0F6CD30-3CCD-30F8-2ABD-EEC6009EA093" name="DIM_JSH_STATE_PK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:14:51 UTC</createdTime>
+<generatorID>5A417A04-7429-A040-A044-A177A361F309</generatorID>
+<ownerDesignName>DW</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE5932FC-B4AB-40DB-4BF8-8EAF19FC61B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

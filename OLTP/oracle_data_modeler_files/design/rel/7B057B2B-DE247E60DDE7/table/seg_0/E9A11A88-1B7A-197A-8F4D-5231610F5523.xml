@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9A11A88-1B7A-197A-8F4D-5231610F5523" name="JSH_ADDRESS">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<generatorID>74CD518D-BB15-4BAE-0838-B31105FFD2C4</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CITY_ID" id="709D4439-9146-FE14-DB3C-5590EA37DFD7">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<generatorID>914FC6E5-31CA-D6D6-4EC1-AFF0491414BB</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D30C9933-0737-3623-4C94-2DDC147E6876" referredColumn="81399190-5A10-167E-2E4A-49895D1F9110"/>
+</associations>
+</Column>
+<Column name="ADDRESS_ID" id="D7DC0B46-2869-F03F-2816-5357F89E70AB">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique address ID]]></commentInRDBMS>
+<generatorID>35D47252-B389-1F3D-3EFB-F0BB1485E2EA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTAL_CODE" id="7724AEAA-CC21-7FE6-E0B4-4250CBB6346E">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[postal code]]></commentInRDBMS>
+<generatorID>812E83EE-B709-2574-2F7D-D928137EAB68</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROW_ID" id="176AFAA1-7A3C-1D54-3DC1-FEB013543054">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<generatorID>ECCE093A-81C7-3B1F-27BF-C0179483F832</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CA60A49-B6BA-B5DB-5368-BB06E6520667" referredColumn="D6EF5AAD-E6F1-0AC1-1F18-29D26FED9009"/>
+</associations>
+</Column>
+<Column name="TBL_LAST_DT" id="AB0ADC7A-1019-6794-2AB8-47FEF4A1B518">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
+<generatorID>F14ECCAE-0992-B0AB-0FDE-B60311BCA1D5</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F71D91F1-3242-4091-08D6-D1D63C80ED80" name="JSH_ADDRESS_PK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<generatorID>5D39DBEF-AFCC-D3C1-04AC-730866B81D5E</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7DC0B46-2869-F03F-2816-5357F89E70AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EB83747-4613-22F4-5CC0-5A0BE8433E68" name="JSH_ADDRESS_JSH_CUSTOMER_FK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<generatorID>D5029395-4B5E-D1EF-33BE-12C40EF8137B</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="176AFAA1-7A3C-1D54-3DC1-FEB013543054"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71B107D0-E55D-D705-78D6-4B256F5FE8E1" name="JSH_ADDRESS_JSH_CITY_FK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<generatorID>E700CEC6-0D11-B62E-7648-793FC943CEEF</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="709D4439-9146-FE14-DB3C-5590EA37DFD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

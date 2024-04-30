@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9AEFE2D-4050-8C83-6446-51C5F0E10D61" name="JSH_SUB_CATEGORY">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<generatorID>AFF21843-EB47-D496-FD2E-A717514973DA</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SUB_CATEGORY_ID" id="2EE7A40F-6D0E-4886-A674-AAC8D79402F2">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique sub category identifier]]></commentInRDBMS>
+<generatorID>8332981F-8BF7-2AA7-E3CD-17426265D8D8</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUB_CATEGORY_NAME" id="BE232254-BEFB-8890-4273-0F3647EF41C0">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[subcategory name]]></commentInRDBMS>
+<generatorID>D30FDC4E-7A07-87F2-2BEB-DD156DE26442</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY_ID" id="1470916E-C975-3F7C-BE53-C10E4FE40C1C">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<generatorID>A1314DE9-5825-794C-69D3-268675F9E780</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F817DE93-C261-E1DF-118E-4081B7E7C6C1" referredColumn="C42D025D-16C1-B8F8-2165-CD6216DB2AF4"/>
+</associations>
+</Column>
+<Column name="TBL_LAST_DT" id="1BA47E4E-435A-D263-5117-AC1D92D7223E">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[This column is updated with system timestamp via trigger, whenever record is inserted/updated. This is required to facilitate CDC base incremental ETL to DW system.]]></commentInRDBMS>
+<generatorID>1010124A-C003-2E46-6139-2273C3D98FCF</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="043CA419-1236-4EC9-47E4-FE5D6F93E3E4" name="JSH_SUB_CATEGORY_PK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<generatorID>02DC3790-3514-44A5-CFEE-16653EDAE958</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EE7A40F-6D0E-4886-A674-AAC8D79402F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0270C0C8-90DA-16B9-1219-ECCF0F5D860C" name="JSH_SUB_CATEGORY_JSH_CATEGORY_FK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-08 00:38:59 UTC</createdTime>
+<generatorID>BE2ED607-29A2-A0D4-C8F7-D8B3244E7589</generatorID>
+<ownerDesignName>design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1470916E-C975-3F7C-BE53-C10E4FE40C1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

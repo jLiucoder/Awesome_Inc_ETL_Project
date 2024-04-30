@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CD295720-5335-EBAC-12E2-B3287EB5A5A3" containerWithKeyObject="5F8B0540-97AA-924B-DB9F-838DA2C6CB4F" localFKIndex="2E2ED950-5E8E-4369-5DB9-A26EB07B20EC" name="FACT_JSH_ORDER_PRODUCT_DIM_JSH_ADDRESS_FK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:14:51 UTC</createdTime>
+<generatorID>74327D05-729E-AA9D-0396-DE6E6B9ABA1B</generatorID>
+<ownerDesignName>DW</ownerDesignName>
+<referredTableLongName>DIM_JSH_ADDRESS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1F424AE8-F049-4D47-82DF-1AA9B838202B</referredTableID>
+<keyObject>D30ED751-74D2-695A-C64A-65135F1D4967</keyObject>
+<referredKeyID>D30ED751-74D2-695A-C64A-65135F1D4967</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ADDRESS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

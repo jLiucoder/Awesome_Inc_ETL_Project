@@ -1,0 +1,13 @@
+File structure:
+
+* /csv_data contains all the data that we are going to load to the DB, to simulate the data that we already have from applications.
+* /oracle_data_modeler_files contains the oracle data modeler files that generates the oracle SQL DDL file to build out the schema
+* /OLTP_ddl contains three versions of DDL that creates the physical entity in MySQL database.
+    * mysql_load.sql has part of the script that loads part of the data to the database.
+    * mysql_auto_incremented_pk.sql has the latest modified version of the DDL code, converted from oracle, added auto increment PK for necesssary tables.
+    * necessary tables means: Since the location tables and the category & subcategory tables dont have IDs on their own, I modified the tables to have auto increment primriy key to make life easier. Other tables stay the same, since the pk for almost all the other tables are the unique row id from the csv file.  
+
+
+
+
+

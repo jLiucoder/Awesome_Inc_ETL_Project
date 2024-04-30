@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="72E01DE5-FFD9-0FD8-4243-6725E6F53D3A" name="DIM_DATE">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:08:28 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DATE_ID" id="E0F8CD2C-1D9F-E37F-E37F-C3BF518A96E7">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:08:42 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FULL_DATE" id="6A72D908-EF9A-F388-2397-8B35693ECAE8">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:10:24 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAYS" id="D0B0AFAC-7201-9BF1-8AC0-1F875637429A">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:10:34 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MONTH_SHORT" id="F91E7B36-9552-48FB-4D4E-719A1AE2B864">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:11:15 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MONTH_NUM" id="DCFC9A11-B0B9-6194-0ADB-F786AFDF6C73">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:11:43 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MONTY_LONG" id="56421C0F-8C15-ACB3-C87B-901418A8640B">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:12:01 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAY_OF_WEEK_SHORT" id="81C2D353-5B30-E2BA-58B7-C499F8775D55">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:12:21 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAY_OF_WEEK_LONG" id="D3FE3B31-1818-DCEE-9180-267844CF5F5C">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:12:44 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="YEAR" id="E0952331-72C2-C2C1-FBCC-CB0A96A22A59">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:13:01 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUARTER" id="3CA62417-DD0C-15C1-96A1-6D0D70E6E3CE">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:13:17 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENTRY_ID" id="FF1B6A72-680D-58D6-8BA1-9FDB149AEAB7">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:13:35 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4C8E8E04-2D80-82F0-EB78-B80EC62A08A7" name="DIM_DATE PK">
+<createdBy>jiayuliu</createdBy>
+<createdTime>2024-03-31 23:09:56 UTC</createdTime>
+<ownerDesignName>DW</ownerDesignName>
+<engineerTo>
+<item key="7B057B2B-9551-CBBE-3F40-DE247E60DDE7" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E0F8CD2C-1D9F-E37F-E37F-C3BF518A96E7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
