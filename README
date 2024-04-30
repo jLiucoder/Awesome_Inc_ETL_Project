@@ -1,11 +1,11 @@
 # Spring 2024 ETL advanced project.
-This monorepo that contains all the necessary code for the project.
+This monorepo contains all the necessary code for the project.
 
 ## Intro
 
-For the ETL project, the approach that we took is using AWS related tools, such as AWS RDS for our OLTP database, AWS Redshift for data warehouse. And for the actual process, we used AWS glue to extract, transform and load to the data warehouse, and accomplished the full data load and incremental data load.
+For the ETL project, the approach that we took is using AWS-related tools, such as AWS RDS for our OLTP database, and AWS Redshift for data warehouse. And for the actual process, we used AWS glue to extract, transform and load to the data warehouse, and accomplished the full data load and incremental data load.
 
-Sections below will go through the whole process of what we did in each part.
+The sections below will go through the whole process of what we did in each part.
 
 ## OLTP
 
@@ -13,22 +13,18 @@ To simulate the business data, what we already have is two CSV files:
 * One has properties like address (from regions down to zip codes), customer information, order information and such.
 * One has information about if the order is being returned. 
 
-We then analyzed the business case, normalized the CSV file based on observation, designed the schema on Oracle data modeler and implemented using MySQL and loaded all data to the entities. The schema is showing below:
+We then analyzed the business case, normalized the CSV file based on observation, designed the schema on Oracle data modeler and implemented using MySQL, and loaded all data to the entities. The schema is shown below:
 
-[![](https://app.eraser.io/workspace/lqerdVZw7Z9CseG98qvW/preview?elements=yX4UUVJMybS8SfmZF15UrA&type=embed)](https://app.eraser.io/workspace/lqerdVZw7Z9CseG98qvW?elements=yX4UUVJMybS8SfmZF15UrA)
-
-
+<img width="1642" alt="image" src="https://github.com/jLiucoder/Awesome_Inc_ETL_Project/blob/main/oltp.png">
 ## Data Warehouse
 
-We again using Oracle data modeler to design the schema of our DW, to make it easier for analysts to use and query, we denormalized the database and made it a star schema, as shown below:
-<a href="https://app.eraser.io/workspace/R1im9ASW752p2jGxbZi8?elements=LHYZnOcD-FY3g3dclUVUEg">
-    <img src="https://app.eraser.io/workspace/R1im9ASW752p2jGxbZi8/preview?elements=LHYZnOcD-FY3g3dclUVUEg&type=embed" width="auto" height="1000">
-</a>
+We again used Oracle data modeler to design the schema of our DW, to make it easier for analysts to use and query, we denormalized the database and made it a star schema, as shown below:
 
+<img width="642" alt="image" src="https://github.com/jLiucoder/Awesome_Inc_ETL_Project/blob/main/dw.png">
 
 ## ETL 
 
-We took a detour on this part, we were going to use one local machine to control and workflow of the ETL process using commandline, like what we went over in class. But AWS RDS doesn't support out file SQL functionalities because of security reasons, thus we decided to use AWS approach, after research we decided glue would be straight forward to integrate.
+We took a detour on this part, we were going to use one local machine to control and workflow of the ETL process using command line, like what we went over in class. But AWS RDS doesn't support out-of-file SQL functionalities because of security reasons, thus we decided to use the AWS approach, after research we decided glue would be straight forward to integrate.
 
 .. to be continued
 
